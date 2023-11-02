@@ -4,19 +4,29 @@
   <link></link>
   <description></description>
 <item>
-    <title>Pricing-plans.html</title>
-    <link>/pricing-plans.html</link>
-    <description>Pricing-plans.html</description>
+    <title>Contact</title>
+    <link>/contact.html</link>
+    <description>Contact</description>
   </item>
 <item>
-    <title>start</title>
-    <link>/start.html</link>
-    <description>start</description>
+    <title>Products</title>
+    <link>/products.html</link>
+    <description>Products</description>
   </item>
 <item>
     <title>index.html</title>
     <link>/index.html</link>
     <description>index.html</description>
+  </item>
+<item>
+    <title>Pricing plans</title>
+    <link>/pricing-plans.html</link>
+    <description>Pricing plans</description>
+  </item>
+<item>
+    <title>Step-by-Step Guide</title>
+    <link>/start.html</link>
+    <description>start</description>
   </item>
 </channel>
 

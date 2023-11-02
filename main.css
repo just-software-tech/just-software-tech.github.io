@@ -226,6 +226,7 @@ p{
     -webkit-transition: 0.6s;
     transition: 0.6s;
     margin-bottom: 25px;
+    min-height: 500px;
 }
 
 .our_service .single_service span {
