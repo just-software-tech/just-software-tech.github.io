@@ -23,16 +23,16 @@
 
     <nav id="menu" class="menu navbar navbar-expand-md navbar-dark">
         <div class="container-fluid menudiv">
-            <a href="#" class="navbar-brand">Brand</a>
+            <a href="/" class="navbar-brand"><img src = "logo.png" /></a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto">
                     <a href="/" class="nav-item nav-link active">Home</a>
-                    <a href="#" class="nav-item nav-link">Products</a>
+                    <a href="/products.html" class="nav-item nav-link">Products</a>
                     <a href="/pricing-plans.html" class="nav-item nav-link">Pricing</a>
-                    <a href="#" class="nav-item nav-link">Contact</a>
+                    <a href="/contact.html" class="nav-item nav-link">Contact</a>
                     <a href="/app" class="nav-item nav-link">Login/Register</a>
                 </div>
                 <div class="navbar-nav ms-auto">
@@ -58,7 +58,7 @@
                         <div>
                             <h5>just software</h5>
                             <h1>Unlock the Power of Dynamic Content for Your Static Website</h1>
-                            <a href="/app" class="btn_hero">Get Started</a>
+                            <a href="/start.html" class="btn_hero">Get Started</a>
                         </div>
                     </div>
 
@@ -80,12 +80,12 @@
 </p><p>
                         Our step-by-step guide will walk you through the process, making integration seamless and efficient. From registering your project to customizing the integration code, you'll have your website up and running with our tools in no time. Let's get started on the journey to unlock the full potential of your website.
                     </p>
-                    <a href="/start.html" class="btn_hero">explore us</a>
+                    <a href="/app" class="btn_hero">go to App</a>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="about_part_img">
-                    <img src="about_part_img.png" alt="">
+                    <img src="banner.png" alt="">
                 </div>
             </div>
         </div>

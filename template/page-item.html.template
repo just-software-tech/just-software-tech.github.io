@@ -23,16 +23,16 @@
 
     <nav id="menu" class="menu navbar navbar-expand-md navbar-dark">
         <div class="container-fluid menudiv">
-            <a href="#" class="navbar-brand">Brand</a>
+            <a href="/" class="navbar-brand"><img src = "logo.png" /></a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto">
                     <a href="/" class="nav-item nav-link active">Home</a>
-                    <a href="#" class="nav-item nav-link">Products</a>
+                    <a href="/products.html" class="nav-item nav-link">Products</a>
                     <a href="/pricing-plans.html" class="nav-item nav-link">Pricing</a>
-                    <a href="#" class="nav-item nav-link">Contact</a>
+                    <a href="/contact.html" class="nav-item nav-link">Contact</a>
                     <a href="/app" class="nav-item nav-link">Login/Register</a>
                 </div>
                 <div class="navbar-nav ms-auto">
@@ -58,21 +58,10 @@
     <div class="container">
 
         <div class="row align-items-center justify-content-between">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="article_text">
-                    <h5>About Us</h5>
-                    <h2>Digital design and development company</h2>
-                    <p>
-                        There winged grass midst moving earth seed herb fifth you're
-                        multiply, you divide cattle stars first cattle was had spirit
-                        you're thing, night darkness. Which itself stars creature.
-                    </p>
-                    <a href="#" class="btn_hero">explore us</a>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="about_part_img">
-                    <img src="about_part_img.png" alt="">
+                    <h2> {{ item.title }}</h2>
+                    {{ item.html }}
                 </div>
             </div>
         </div>
@@ -91,6 +80,20 @@
         }
     </script>
 
+{% if configuration.generic["just-software"] %}
+    <script
+    src="https://just-software-tech.github.io/just-subscribe/bundle.js"
+    defer
+    async></script>
+    <script
+    src="https://just-software-tech.github.io/just-comment/bundle.js"
+    defer
+    async></script>
+    <script
+    src="https://just-software-tech.github.io/just-contact/bundle.js"
+    defer
+    async></script>
+  {% endif %}
 </body>
 
 </html>
