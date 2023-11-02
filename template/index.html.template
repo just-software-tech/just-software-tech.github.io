@@ -1,0 +1,213 @@
+<html lang="en">
+
+<head>
+    {{ GA }}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="main.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/792270d8d1.js" crossorigin="anonymous"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <nav id="menu" class="menu navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid menudiv">
+            <a href="#" class="navbar-brand">Brand</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="/" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">Products</a>
+                    <a href="/pricing-plans.html" class="nav-item nav-link">Pricing</a>
+                    <a href="#" class="nav-item nav-link">Contact</a>
+                    <a href="/app" class="nav-item nav-link">Login/Register</a>
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link2">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="nav-item nav-link2">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="nav-item nav-link2">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="hero">
+                        <div>
+                            <h5>just software</h5>
+                            <h1>Unlock the Power of Dynamic Content for Your Static Website</h1>
+                            <a href="/app" class="btn_hero">Get Started</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md-6">
+                <div class="article_text">
+                    <h5>About Us</h5>
+                    <h2>Enhance Your Website with Our Suite of Tools and Services</h2>
+                    <p>
+                        Ready to transform your static website into a dynamic and engaging online platform? With Just Software's suite of products, it's easier than ever to enhance your website's functionality and user experience. Whether you're looking to bolster your website's security, engage your audience through subscriptions, foster meaningful interactions with comments, or provide a secure channel for visitor communication, we've got you covered.
+</p><p>
+                        Our step-by-step guide will walk you through the process, making integration seamless and efficient. From registering your project to customizing the integration code, you'll have your website up and running with our tools in no time. Let's get started on the journey to unlock the full potential of your website.
+                    </p>
+                    <a href="/start.html" class="btn_hero">explore us</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="about_part_img">
+                    <img src="about_part_img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="our_service">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xl-6">
+                    <div class="singleFeature">
+                        <div class="single_service">
+                            <h4>
+                                Just Subscribe
+                            </h4>
+                            <p>
+                               Engage Your Audience with Subscription Features.
+                            </p>
+                            <p>
+                            Engage and retain your audience effortlessly with Just Subscribe. Our subscription functionality allows visitors to support your content by subscribing to updates, whether it's blog posts, news, or any type of fresh content you deliver. The integration code seamlessly adds subscription options to your static site, giving you a direct line to your audience. In your admin portal, you can manage your subscriber list, send updates, and even customize your subscription features to match your unique needs. It's the key to keeping your audience engaged and informed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-6">
+                    <div class="singleFeature">
+                        <div class="single_service">
+                            <h4>Just Contact</h4>
+                            <p>
+                                Securely Connect with Your Visitors.
+                            </p>
+                            <p>
+                                Connect with your website visitors in a safe and secure way using Just Contact. Our functionality enables visitors to send messages to site owners while keeping spam and bots at bay. No more worrying about the authenticity of messages – with Just Contact, you'll have a direct line of communication with your audience. Messages are securely stored in your admin portal and registered in the notification section, ensuring you never miss a genuine interaction
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-6">
+                    <div class="singleFeature">
+                        <div class="single_service">
+                            <h4>Just Comment</h4>
+                            <p>
+                               Foster Interaction and Discussions on Your Website.
+                            </p>
+                            <p>
+                                Foster meaningful interactions and discussions on your website with Just Comment. This feature-rich product enables your visitors to read, post, and reply to comments on your pages. Comments are thoughtfully grouped and displayed by page, ensuring relevant conversations in the right context. In your admin portal, you have complete control over comment management, making it easy to engage with your audience and keep the conversation flowing
+                                </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-xl-6">
+                    <div class="singleFeature">
+                        <div class="single_service">                            
+                            <h4>Just Protect</h4>
+                            <p>
+                               Defend Your Website Against Bots and Spam.
+                            </p>
+                            <p>
+                            Say goodbye to annoying spam and intrusive bots. Just Protect is your shield against unwanted automated activities on your website. Our custom anti-bot protection functionality ensures that only real users can access and interact with your site. By requiring users to select icons from a list in the correct order, we effectively filter out malicious bots and spammers. Keep your website clean, your data secure, and your user experience pristine with Just Protect
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-7">
+                    <div class="section_tittle text-center">
+                        <p>Testimonials</p>
+                        <h2>What our Client say</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row testx">
+                <div class="user col-xl-6">
+                    <div class="test">
+                    <div class="client_info">
+                        <h4>David McCormac</h4>
+                        <p>Blogger</p>
+                    </div>
+                    <p>
+                        "Just Software has been a game-changer for our website. The anti-bot protection provided by Just Protect has significantly reduced spam and made our site more secure. Just Subscribe has helped us keep our audience engaged and informed, and Just Comment has fostered valuable discussions among our readers. The user-friendly interface and top-notch customer support make Just Software a must-have for any website owner."
+                    </p>
+                </div>
+                </div>
+
+                <div class="user col-xl-6">
+                <div class="test">
+                    <div class="client_info">
+                        <h4>Justin Goodrich</h4>
+                        <p>Web entrepreneur</p>
+                    </div>
+                    <p>
+                        "I can't express how happy I am with Just Software's services. Just Contact has made it so easy for our visitors to reach out to us, and we've received valuable feedback and inquiries that have improved our website's user experience. Additionally, the integration was a breeze thanks to the helpful resources in the Integration Assistant. Just Software has truly enhanced our site and user engagement."
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("menu").classList.add("menu_fixed")
+            } else {
+                document.getElementById("menu").classList.remove("menu_fixed")
+            }
+        }
+    </script>
+
+</body>
+
+</html>
