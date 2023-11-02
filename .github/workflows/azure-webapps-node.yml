@@ -1,0 +1,30 @@
+name: GenesysSSG
+
+on:
+  push:
+    branches:
+    - main  # default branch
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '6.0'
+    - name: Install GenesysSSG
+      run: dotnet tool install --tool-path . GenesysSSG
+    - name: Publish blog
+      run: ./genesysssg
+    - name: Configure public domain
+      run: echo "www.just-software.tech" >> ./output/CNAME
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v2.5.0
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        PUBLISH_BRANCH: gh-pages  # deploying branch
+        PUBLISH_DIR: ./output
