@@ -1,1 +1,0 @@
-# just-software-tech.github.io

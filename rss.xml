@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"><channel>
+  <title>My blog</title>
+  <link></link>
+  <description></description>
+<item>
+    <title>Pricing-plans.html</title>
+    <link>/pricing-plans.html</link>
+    <description>Pricing-plans.html</description>
+  </item>
+<item>
+    <title>start</title>
+    <link>/start.html</link>
+    <description>start</description>
+  </item>
+<item>
+    <title>index.html</title>
+    <link>/index.html</link>
+    <description>index.html</description>
+  </item>
+</channel>
+
+</rss>
