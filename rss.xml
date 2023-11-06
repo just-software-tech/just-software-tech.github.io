@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0"><channel>
   <title>My blog</title>
-  <link></link>
+  <link>https://www.just-software.tech</link>
   <description></description>
 <item>
     <title>Contact</title>
-    <link>/contact.html</link>
+    <link>https://www.just-software.tech/contact.html</link>
     <description>Contact</description>
   </item>
 <item>
     <title>Products</title>
-    <link>/products.html</link>
+    <link>https://www.just-software.tech/products.html</link>
     <description>Products</description>
   </item>
 <item>
     <title>index.html</title>
-    <link>/index.html</link>
+    <link>https://www.just-software.tech/index.html</link>
     <description>index.html</description>
   </item>
 <item>
     <title>Pricing plans</title>
-    <link>/pricing-plans.html</link>
+    <link>https://www.just-software.tech/pricing-plans.html</link>
     <description>Pricing plans</description>
   </item>
 <item>
     <title>Step-by-Step Guide</title>
-    <link>/start.html</link>
+    <link>https://www.just-software.tech/start.html</link>
     <description>start</description>
   </item>
 </channel>
