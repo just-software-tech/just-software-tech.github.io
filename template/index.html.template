@@ -1,7 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     {{ GA }}
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link href="main.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,7 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
 
-
+    <title>{{ configuration.title }}</title>
+    <meta name="description" content="{{ configuration.description }}">
 
 </head>
 
@@ -85,7 +89,7 @@
             </div>
             <div class="col-md-6">
                 <div class="about_part_img">
-                    <img src="banner.png" alt="">
+                    <img alt="Just Software Tech" src="banner.png" alt="">
                 </div>
             </div>
         </div>
