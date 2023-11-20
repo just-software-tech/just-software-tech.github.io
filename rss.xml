@@ -4,14 +4,14 @@
   <link>https://www.just-software.tech</link>
   <description>Unlock the Power of Dynamic Content for Your Static Website</description>
 <item>
-    <title>Pricing plans</title>
-    <link>https://www.just-software.tech/pricing-plans.html</link>
-    <description>Pricing plans</description>
-  </item>
-<item>
     <title>Contact</title>
     <link>https://www.just-software.tech/contact.html</link>
     <description>Contact</description>
+  </item>
+<item>
+    <title>Products</title>
+    <link>https://www.just-software.tech/products.html</link>
+    <description>Products</description>
   </item>
 <item>
     <title>index.html</title>
@@ -19,9 +19,9 @@
     <description>index.html</description>
   </item>
 <item>
-    <title>Products</title>
-    <link>https://www.just-software.tech/products.html</link>
-    <description>Products</description>
+    <title>Pricing plans</title>
+    <link>https://www.just-software.tech/pricing-plans.html</link>
+    <description>Pricing plans</description>
   </item>
 <item>
     <title>Step-by-Step Guide</title>
