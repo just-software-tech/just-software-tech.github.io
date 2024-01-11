@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="{{configuration.lang}}">
+
+  <head>
+    {{ GA }}
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/favicon.ico">
+    <link rel="canonical" href="{{ self.url }}" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="All blogs that i published">
+    <title>{{ configuration.title }}</title>
+    <link href="/{{subdirectory}}assets/bootstrap.min.css" rel="stylesheet">
+    <script src="/{{subdirectory}}assets/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/{{subdirectory}}assets/default.min.css">
+    <script src="/{{subdirectory}}assets/highlight.min.js"></script>
+
+    <script src="/{{subdirectory}}assets/792270d8d1.js" crossorigin="anonymous"></script>
+    <link href="/{{subdirectory}}assets/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container-lg">
+
+      <nav class="navbar navbar-expand-sm navbar-light navbar1">
+        <div class="container-fluid">
+          <!-- <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2">
+          <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <div class="collapse navbar-collapse" id="navbarCollapse2">
+            <div class="navbar-nav">
+              <a href="/{{subdirectory}}index.html" class="nav-item nav-link active">HOME</a>
+              <a href="/{{subdirectory}}about.html" class="nav-item nav-link">ABOUT</a>
+            </div>
+            <div class="navbar-nav ms-auto social">
+              <a href="/{{subdirectory}}rss.xml" aria-label="RSS">
+                <img alt="RSS" style="width:15px" src="/images/rss.png" />
+              </a>
+              {% if configuration.facebook %}
+                <a href="{{ configuration.facebook }}" aria-label="Facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              {% endif %}
+              {% if configuration.twitter %}
+                <a href="{{ configuration.twitter }}" aria-label="Twitter">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              {% endif %}
+              {% if configuration.instagram %}
+                <a href="{{ configuration.instagram }}" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram-in"></i>
+                </a>
+              {% endif %}
+              {% if configuration.linkedin %}
+                <a href="{{ configuration.linkedin }}" aria-label="LinkedId">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <h1>
+          {{ configuration.title }}
+        </h1>
+      </div>
+
+      <nav class="navbar navbar-expand-sm navbar-light navbar2">
+        <div class="container-fluid">
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse3">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse3">
+            <div class="navbar-nav">
+              {{ navigation }}
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row container-fluid">
+        <div class="title">
+          <h2>
+            Blog archive by year
+          </h2>
+        </div>
+      </div>
+
+
+      <div class="row container-fluid boxparent">
+        <div class="col-md-8 ">
+
+          {% for blogByYear in blogsByYear %}
+            <h3 class="mb10">{{ blogByYear.year }}
+            </h3>
+            {% for post in blogByYear.items %}
+              <div class="box p10 mb10">
+
+
+
+                <div>
+                  {% if post.image %}
+                    <img src="{{post.image}}" />
+                  {% endif %}
+                </div>
+                <div class="mt30">
+                  <h3 class="title-b">
+                    <a href="/{{post.url}}">{{ post.title }}</a>
+                  </h3>
+                  <div class="meta">
+                    {{ post.created }}
+                  </div>
+                </div>
+                <div class="mt10">
+                  {{ post.short }}
+                </div>
+
+                <div class="btn-parent">
+                  <a href="/{{post.url}}" class="continue">continue reading</a>
+                </div>
+
+                <div class="social-list">
+                  <a href="https://www.facebook.com/sharer.php?u={{configuration.hostedurlencoded}}{{ post.urlencoded }}" aria-label="Share">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://twitter.com/intent/tweet?url={{configuration.hostedurlencoded}}{{ post.urlencoded }}&text={{post.title}}" aria-label="Share">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/sharing/share-offsite/?url={{configuration.hostedurlencoded}}{{ post.urlencoded }}" aria-label="Share">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+
+              </div>
+            {% endfor %}
+          {% endfor %}
+
+
+
+        </div>
+        <div class="col-md-4 p0">
+          {% if configuration.generic["about"] %}
+            <div class="box p10 mb10 c">
+              <h5>About me</h5>
+              <div class="mt10">
+                <img alt="Me" class="about" src="{{ configuration.generic["about"].image }}" />
+              </div>
+              <div class="p10 mt10 f14">
+                {{ configuration.generic["about"].text }}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if configuration.facebook or configuration.twitter or configuration.instagram or configuration.linkedin %}
+            <div class="box p10 mb10 c">
+              <h5>Social Plugin</h5>
+              <div class="social mt30">
+                {% if configuration.facebook %}
+                  <span>
+                    <a href="{{ configuration.facebook }}">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </span>
+                {% endif %}
+                {% if configuration.twitter %}
+                  <span>
+                    <a href="{{ configuration.twitter }}">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </span>
+                {% endif %}
+                {% if configuration.linkedin %}
+                  <span>
+                    <a href=" {{ configuration.linkedin }}">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </span>
+                {% endif %}
+                {% if configuration.instagram %}
+                  <span>
+                    <a href="{{ configuration.instagram }}">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </span>
+                {% endif %}
+                {% if configuration.generic["just-software"] %}
+                  <div
+                    style="margin-top:10px"
+                    id="just-subscribe"
+                    clientId="{{configuration.generic["just-software"].id}}"
+                    clientKey="{{configuration.generic["just-software"].key}}"></div>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+
+
+
+          <div class="box p10 mb10 c">
+            <h5>Popular posts</h5>
+            <div class="popular">
+              <table>
+                {% for post in pinned %}
+                  <tr>
+                    <td>
+                      {% if post.image %}
+                        <img src="{{ post.image }}" />
+                      {% endif %}
+                    </td>
+                    <td class="p10">
+                      <div class="social">
+                        <a href="/{{ post.url }}">{{ post.title }}</a>
+                      </div>
+                      <div class="meta2">{{ post.created }}</div>
+                    </td>
+                  </tr>
+                {% endfor %}
+              </table>
+            </div>
+          </div>
+
+
+
+          <div class="box p10 mb10 c">
+            <h5>Tags</h5>
+            <div class="labels">
+              <ul>
+                {% for blogByTag in blogsByTag %}
+                  <li>
+                    <a href="./tags/{{ blogByTag.tag }}.html">{{ blogByTag.tag }}
+                      <span>{{ blogByTag.items.size }}</span>
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="row container-fluid footer">
+        <div class="col-md-4  pt20">
+          {% if configuration.generic["about"] %}
+
+            <h5>About me</h5>
+            <div class="mt10 c">
+              <img alt="Me" class="about" src="{{ configuration.generic["about"].image }}" />
+            </div>
+            <div class="p10 mt10 f14">
+              {{ configuration.generic["about"].text }}
+            </div>
+
+          {% endif %}
+
+        </div>
+        <div class="col-md-4 pt20">
+          <h5>Useful link</h5>
+          {{ FooterNavigation }}
+          <a href="/{{subdirectory}}rss.xml">
+            <img alt="RSS" style="width:20px" src="/images/rss.png" />
+          </a>
+        </div>
+        <div class="col-md-4 pt20">
+          <h5>Popular posts</h5>
+          <div class="popular">
+
+            <table>
+              {% for post in pinned limit: 3 %}
+                <tr>
+                  <td>
+                    {% if post.image %}
+                      <img src="{{ post.image }}" />
+                    {% endif %}
+                  </td>
+                  <td class="p10">
+                    <div class="social">
+                      <a href="/{{ post.url }}">{{ post.title }}</a>
+                    </div>
+                    <div class="meta2">{{ post.created }}</div>
+                  </td>
+                </tr>
+              {% endfor %}
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% if configuration.generic["just-software"] %}
+      <script
+        src="https://www.just-software.tech/just-subscribe/bundle.js"
+        defer
+        async></script>
+      <script
+        src="https://www.just-software.tech/just-comment/bundle.js"
+        defer
+        async></script>
+      <script
+        src="https://www.just-software.tech/just-contact/bundle.js"
+        defer
+        async></script>
+    {% endif %}
+  </body>
+
+</html>

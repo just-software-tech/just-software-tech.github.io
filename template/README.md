@@ -1,0 +1,1 @@
+# GenesysSSG.Themes.Monochrome

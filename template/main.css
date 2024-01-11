@@ -312,3 +312,7 @@ ul {
 .testx{
     margin-top:50px !important;
 }
+
+img{
+    max-width: 100%;
+}
